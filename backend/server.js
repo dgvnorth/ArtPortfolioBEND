@@ -20,6 +20,7 @@ app.use('/api/user', userRoutes)
 
 //Middleware
 app.use(notFound);
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 5000;
 
