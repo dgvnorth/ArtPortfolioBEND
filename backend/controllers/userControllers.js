@@ -71,4 +71,8 @@ const loginUser = asyncHandler(async (req, res)=> {
     }
 })
 
+// @route        DELETE/api/user/:id
+// @desc         Delete User by ID
+// @accesss      Public
+
 module.exports = {registerUser, getAllUsers, loginUser}

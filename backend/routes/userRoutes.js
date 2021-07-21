@@ -4,7 +4,7 @@ const router = express.Router()
 
 //Controllers
 
-const { registerUser, getAllUsers, loginUser } = require('../controllers/userController')
+const { registerUser, getAllUsers, loginUser } = require('../controllers/userControllers')
 
 //Routes
 

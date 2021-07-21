@@ -4,6 +4,7 @@ const path = require("path");
 
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const userRoutes = require('./routes/userRoutes');
+const blogRoutes = require('./routes/blogRoutes');
 
 const connectDB = require("./config/db");
 
@@ -17,6 +18,7 @@ app.use(express.json({ extended: false }));
 //Define Routers
 
 app.use('/api/user', userRoutes)
+app.use('/api/blog', blogRoutes)
 
 //Middleware
 app.use(notFound);
