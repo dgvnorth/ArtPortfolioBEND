@@ -68,7 +68,7 @@ const createBlog = asyncHandler(async (req, res) => {
 
 const updateBlog = asyncHandler(async(req, res) => {
     const {title, image, content, description} = req.body
-    const blog = await Blog.findById(req,params.id)
+    const blog = await Blog.findById(req.params.id)
 
     if (blog) {
         blog.title = title

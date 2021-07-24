@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 
 //Middleware
-const {protect, admin} = require("../middleware/authMiddleware")
+const { protect, admin } = require("../middleware/authMiddleware")
 
 //Controllers
 

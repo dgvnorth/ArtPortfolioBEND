@@ -53,9 +53,9 @@ const getAllUsers = asyncHandler(async (req, res)=> {
 // @accesss      Public
 
 const loginUser = asyncHandler(async (req, res)=> {
-    const {email, password} = req.body
+    const { email, password } = req.body
     
-    const user = await User.findOne({email})
+    const user = await User.findOne({ email })
 
     if (user && (await user.matchPassword(password))) {
         res.json({
